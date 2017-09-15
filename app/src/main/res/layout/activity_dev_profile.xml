@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.emmanuelbaldwin.githubdev.DevProfileActivity">
+
+    <ImageView
+        android:id="@+id/devProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+    <TextView
+        android:id="@+id/devProfileUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/devProfileImage"
+        android:textSize="24sp"
+        tools:text="Emma" />
+
+    <TextView
+        android:id="@+id/devProfileUserURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devProfileUserName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/devProfileImage"
+        android:textSize="16sp"
+        tools:text="https://github.com/shalvah" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/devProfileUserURL"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/devProfileImage"
+        android:background="@drawable/logo"
+        android:onClick="onClickButton" />
+
+</RelativeLayout>
